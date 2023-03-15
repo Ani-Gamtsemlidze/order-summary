@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+.ordinary-container{
+    background-color: rgba(224, 232, 255, 1);
+    width: 100%;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.ordinary-box{
+    background-color: #FFF;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+.img-box img{
+   display: block;
+   transition: 0.5s;
+   width: 100%;
+}
+
+.text-box h2{
+    color: #1F2E55;
+    font-size: 28px;
+    font-weight: 900;
+}
+.text-box p{
+    color: #717FA6;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 17px 0 24px;
+}
+.annual-box{
+    background-color: #F7F9FF;
+    border-radius: 11px;
+}
+.link-a a{
+    color: #382AE1;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18.52px;
+}
+.annual-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    
+}
+.border-pay{
+    background-color: #382AE1;
+    border-radius: 11px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 102px;
+    margin: 32px 0 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.text-box{
+    text-align: center;
+}
+.payment{
+    color: #FFF;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19.85px;
+    display: inline;
+    text-align: center;
+}
+.cancel-txt button{
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: #717FA6;
+    cursor: pointer;
+}
+.cancel-txt{
+    display: flex;
+    justify-content: center;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+}
+.txt span:first-child{
+    font-size: 16px;
+    color: #1F2E55;
+    font-weight: 900;
+}
+.txt span:last-child{
+    color: #717FA6;
+    font-size: 16px;
+    line-height: 21.17px;
+}
+.ordinary-main-box{
+    padding: 45px 48px 48px 48px;
+}
+.img-box:hover img{
+    transform: scale(1.1) rotate(2deg);
+}
+.img-box{
+    overflow: hidden;
+}
+.border-pay:hover{
+    transform: translateY(-2px);
+    background-color: #766CF1;;
+}
+@media only screen and (max-width: 992px) {
+    .border-pay{
+        padding: 15px 50px;
+        margin: 27px 0 21px;
+    }
+    .annual-box{
+        padding: 15px;
+    }
+    .ordinary-main-box{
+        padding: 15px 18px 28px 18px;
+    }
+  }
